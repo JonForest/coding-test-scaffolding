@@ -17,12 +17,13 @@ app.get('/post/:slug', function (req, res) {
 })
 
 /**
- * Returns a json list of all posts, formatted as:
+ * Returns a json array of all posts, formatted as:
  * [
  *  {
  *    title: <article's title>,
  *    slug: <article's slug>
- *  }
+ *  },
+ *  ...
  * ] 
  */
 app.get('/posts', function (req, res) {
